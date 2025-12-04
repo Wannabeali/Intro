@@ -1522,28 +1522,28 @@
           }
         });
 
-        $('#contact-form').submit(function (e) {
-    e.preventDefault();
+//         $('#contact-form').submit(function (e) {
+//     e.preventDefault();
 
-    $.ajax({
-        url: "sendmail.php",
-        type: "POST",
-        data: {
-            name: $("#name").val(),
-            email: $("#email").val(),
-            subject: $("#subject").val(),
-            message: $("#message").val()
-        },
-        success: function (response) {
-            if (response.trim() === "success") {
-                alert("Thanks! Your message has been sent.");
-                $('#contact-form')[0].reset();
-            } else {
-                alert("Something went wrong. Please try again.");
-            }
-        }
-    });
-});
+//     $.ajax({
+//         url: "sendmail.php",
+//         type: "POST",
+//         data: {
+//             name: $("#name").val(),
+//             email: $("#email").val(),
+//             subject: $("#subject").val(),
+//             message: $("#message").val()
+//         },
+//         success: function (response) {
+//             if (response.trim() === "success") {
+//                 alert("Thanks! Your message has been sent.");
+//                 $('#contact-form')[0].reset();
+//             } else {
+//                 alert("Something went wrong. Please try again.");
+//             }
+//         }
+//     });
+// });
 
 
         // Scroll indicator
